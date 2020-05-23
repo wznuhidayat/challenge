@@ -9,9 +9,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.player.PlayerFragment"></activity>
+        <activity android:name=".ui.news.NewsFragment"></activity>
+        <activity android:name=".ui.player.PlayerFragment" />
         <activity android:name=".ui.updatecovid.CovidFragment" />
         <activity
             android:name=".MainActivity"

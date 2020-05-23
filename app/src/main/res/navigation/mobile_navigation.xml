@@ -50,4 +50,14 @@
         android:name="dacas.official.challenge.ui.player.PlayerFragment"
         android:label="Player"
         tools:layout="@layout/activity_player_fragment" />
+    <fragment
+        android:id="@+id/nac_news"
+        android:name="dacas.official.challenge.ui.news.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/nac_song"
+        android:name="dacas.official.challenge.ui.song.SongFragment"
+        android:label="Song"
+        tools:layout="@layout/fragment_song" />
 </navigation>

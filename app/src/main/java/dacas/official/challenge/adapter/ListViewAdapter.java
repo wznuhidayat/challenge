@@ -7,8 +7,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -50,8 +52,12 @@ public class ListViewAdapter extends ArrayAdapter<PlayerItem> {
         textViewBirth_date.setText(playerItem.getBirth_date());
         textViewPosition.setText(playerItem.getPosition());
 
-        Glide.with(context).load(playerItem.getPoster()).into(imgVIew);
 
+
+
+        Glide.with(context).load(playerItem.getPoster()).into(imgVIew);
+//        Picasso.with(context).load(playerItem.getPoster())
+//                .into(imgVIew);
         return listViewItem;
     }
 }
